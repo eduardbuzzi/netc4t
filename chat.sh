@@ -44,3 +44,5 @@ chmod +x .chat-again.sh
 ./.chat-again.sh
 ;;
 esac
+./execute.sh
+exit
