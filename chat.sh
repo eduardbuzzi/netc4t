@@ -11,22 +11,22 @@ case $ESCOLHA in
 ./sender-chat.sh
 ;;
 *)
-echo "echo" > .chatagain.sh
-echo 'echo "(1) Escutar Chat"' >> .chatagain.sh
-echo 'echo "(2) Enviar Chat"' >> .chatagain.sh
-echo 'read -p "Qual sua escolha? " ESCOLHA' >> .chatagain.sh
-echo 'case $ESCOLHA in' >> .chatagain.sh
-echo '1)' >> .chatagain.sh
-echo './listener-chat.sh' >> .chatagain.sh
-echo ';;' >> .chatagain.sh
-echo '2)' >> .chatagain.sh
-echo './sender-chat.sh' >> .chatagain.sh
-echo ';;' >> .chatagain.sh
-echo "*)" >> .chatagain.sh
-echo "./.chatagain.sh" >> .chatagain.sh
-echo ";;" >> .chatagain.sh
-echo 'esac' >> .chatagain.sh
-chmod +x .chatagain.sh
-./.chatagain.sh
+echo "echo" > .chat-again.sh
+echo 'echo "(1) Escutar Chat"' >> .chat-again.sh
+echo 'echo "(2) Enviar Chat"' >> .chat-again.sh
+echo 'read -p "Qual sua escolha? " ESCOLHA' >> .chat-again.sh
+echo 'case $ESCOLHA in' >> .chat-again.sh
+echo '1)' >> .chat-again.sh
+echo './listener-chat.sh' >> .chat-again.sh
+echo ';;' >> .chat-again.sh
+echo '2)' >> .chat-again.sh
+echo './sender-chat.sh' >> .chat-again.sh
+echo ';;' >> .chat-again.sh
+echo "*)" >> .chat-again.sh
+echo "./.chat-again.sh" >> .chat-again.sh
+echo ";;" >> .chat-again.sh
+echo 'esac' >> .chat-again.sh
+chmod +x .chat-again.sh
+./.chat-again.sh
 ;;
 esac
