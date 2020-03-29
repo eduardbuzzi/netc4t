@@ -1,4 +1,5 @@
 #!/bin/bash
+trap '' 2
 echo
 echo "(1) Instalar NetCAT"
 echo "(2) Chat"
