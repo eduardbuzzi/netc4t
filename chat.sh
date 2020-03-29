@@ -1,11 +1,11 @@
 #!/bin/bash
 
-chmod +x ./listener-chat-tcp.sh
-chmod +x ./sender-chat-tcp.sh
+chmod +x ./listener-chat.sh
+chmod +x ./sender-chat.sh
 
 echo
-echo "(1) Escutar Chat TCP"
-echo "(2) Enviar Chat TCP"
+echo "(1) Escutar Chat"
+echo "(2) Enviar Chat"
 echo "(0) Voltar"
 echo
 read -p "Qual sua escolha? " ESCOLHA
@@ -14,15 +14,15 @@ case $ESCOLHA in
 ./execute.sh
 ;;
 1)
-./listener-chat-tcp.sh
+./listener-chat.sh
 ;;
 2)
-./sender-chat-tcp.sh
+./sender-chat.sh
 ;;
 *)
 echo "echo" > .chat-again.sh
-echo 'echo "(1) Escutar Chat TCP"' >> .chat-again.sh
-echo 'echo "(2) Enviar Chat TCP"' >> .chat-again.sh
+echo 'echo "(1) Escutar Chat"' >> .chat-again.sh
+echo 'echo "(2) Enviar Chat"' >> .chat-again.sh
 echo 'echo "(0) Voltar"' >> .chat-again.sh
 echo 'echo' >> .chat-again.sh
 echo 'read -p "Qual sua escolha? " ESCOLHA' >> .chat-again.sh
@@ -31,10 +31,10 @@ echo '0)' >> .chat-again.sh
 echo './execute.sh' >> .chat-again.sh
 echo ';;' >> .chat-again.sh
 echo '1)' >> .chat-again.sh
-echo './listener-chat-tcp.sh' >> .chat-again.sh
+echo './listener-chat.sh' >> .chat-again.sh
 echo ';;' >> .chat-again.sh
 echo '2)' >> .chat-again.sh
-echo './sender-chat-tcp.sh' >> .chat-again.sh
+echo './sender-chat.sh' >> .chat-again.sh
 echo ';;' >> .chat-again.sh
 echo "*)" >> .chat-again.sh
 echo "./.chat-again.sh" >> .chat-again.sh
