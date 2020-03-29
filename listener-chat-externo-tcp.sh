@@ -56,3 +56,4 @@ chmod +x .listener-chat-externo-tcp-again.sh
 ./.listener-chat-externo-tcp-again.sh
 ;;
 esac
+exit
