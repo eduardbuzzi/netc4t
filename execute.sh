@@ -21,9 +21,9 @@ case $ESCOLHA in
 *)
 echo "echo" > .executeagain.sh
 echo 'echo "(1) Chat"' >> .executeagain.sh
-echo 'echo "(1) Enviar/Receber Arquivos"' >> .executeagain.sh
-echo 'echo "(1) Shell Reverso"' >> .executeagain.sh
-echo 'echo "(1) Scan de Portas"' >> .executeagain.sh
+echo 'echo "(2) Enviar/Receber Arquivos"' >> .executeagain.sh
+echo 'echo "(3) Shell Reverso"' >> .executeagain.sh
+echo 'echo "(4) Scan de Portas"' >> .executeagain.sh
 echo 'read -p "Qual sua escolha? " ESCOLHA' >> .executeagain.sh
 echo 'case $ESCOLHA in' >> .executeagain.sh
 echo '1)' >> .executeagain.sh
