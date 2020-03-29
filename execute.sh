@@ -13,7 +13,7 @@ case $ESCOLHA in
 exit
 ;;
 1)
-./instalar.sh
+./install.sh
 ;;
 2)
 ./chat.sh
