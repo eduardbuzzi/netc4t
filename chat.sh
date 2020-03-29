@@ -23,7 +23,7 @@ echo '2)' >> .chatagain.sh
 echo './sender-chat.sh' >> .chatagain.sh
 echo ';;' >> .chatagain.sh
 echo "*)" >> .chatagain.sh
-echo "./.executeagain.sh" >> .chatagain.sh
+echo "./.chatagain.sh" >> .chatagain.sh
 echo ";;" >> .chatagain.sh
 echo 'esac' >> .chatagain.sh
 chmod +x .chatagain.sh
