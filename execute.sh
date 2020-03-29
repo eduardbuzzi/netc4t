@@ -29,7 +29,8 @@ exit
 ./portscan.sh
 ;;
 *)
-echo "echo" > .executeagain.sh
+echo "trap '' 2" > .executeagain.sh
+echo "echo" >> .executeagain.sh
 echo 'echo "(1) Instalar NetCAT"' >> .executeagain.sh
 echo 'echo "(2) Chat"' >> .executeagain.sh
 echo 'echo "(3) Enviar/Receber Arquivos"' >> .executeagain.sh
