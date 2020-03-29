@@ -24,6 +24,7 @@ echo 'echo "(1) Chat"' >> .executeagain.sh
 echo 'echo "(1) Enviar/Receber Arquivos"' >> .executeagain.sh
 echo 'echo "(1) Shell Reverso"' >> .executeagain.sh
 echo 'echo "(1) Scan de Portas"' >> .executeagain.sh
+echo 'echo read -p "Qual sua escolha? " ESCOLHA' >> .executeagain.sh
 echo 'case $ESCOLHA in' >> .executeagain.sh
 echo '1)' >> .executeagain.sh
 echo './chat.sh' >> .executeagain.sh
