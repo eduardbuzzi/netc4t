@@ -5,6 +5,7 @@ echo "(2) Enviar/Receber Arquivos"
 echo "(3) Shell Reverso"
 echo "(4) Scan de Portas"
 echo "(0) Sair"
+echo
 read -p "Qual sua escolha? " ESCOLHA
 case $ESCOLHA in
 0)
@@ -29,6 +30,7 @@ echo 'echo "(2) Enviar/Receber Arquivos"' >> .executeagain.sh
 echo 'echo "(3) Shell Reverso"' >> .executeagain.sh
 echo 'echo "(4) Scan de Portas"' >> .executeagain.sh
 echo 'echo "(0) Sair"' >> .executeagain.sh
+echo 'echo' >> .executeagain.sh
 echo 'read -p "Qual sua escolha? " ESCOLHA' >> .executeagain.sh
 echo 'case $ESCOLHA in' >> .executeagain.sh
 echo '0)' >> .executeagain.sh
