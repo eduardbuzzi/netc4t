@@ -1,5 +1,8 @@
 #!/bin/bash
 
+chmod +x ./listener-chat-interno.sh
+chmod +x ./listener-chat-externo.sh
+
 curl -s -C - -o IP http://meuip.net.br
 IPexterno=$(grep "<title>" IP | cut -d ' ' -f9 | cut -d '<' -f1)
 IPinterno=$(hostname -I | cut -d ' ' -f1)
