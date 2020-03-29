@@ -7,6 +7,7 @@ echo
 echo "(1) Escutar Chat"
 echo "(2) Enviar Chat"
 echo "(0) Voltar"
+echo
 read -p "Qual sua escolha? " ESCOLHA
 case $ESCOLHA in
 0)
@@ -23,6 +24,7 @@ echo "echo" > .chat-again.sh
 echo 'echo "(1) Escutar Chat"' >> .chat-again.sh
 echo 'echo "(2) Enviar Chat"' >> .chat-again.sh
 echo 'echo "(0) Voltar"' >> .chat-again.sh
+echo 'echo' >> .chat-again.sh
 echo 'read -p "Qual sua escolha? " ESCOLHA' >> .chat-again.sh
 echo 'case $ESCOLHA in' >> .chat-again.sh
 echo '0)' >> .chat-again.sh
