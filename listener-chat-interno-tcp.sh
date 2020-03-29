@@ -8,3 +8,4 @@ echo
 read -p "Informe a porta para escutar (entre 1-65535): " PORTA
 nc -lvp $PORTA
 ./execute.sh
+exit
