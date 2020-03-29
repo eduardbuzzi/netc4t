@@ -1,7 +1,7 @@
 #!/bin/bash
 
-chmod +x ./listener-chat-interno.sh
-chmod +x ./listener-chat-externo.sh
+chmod +x ./listener-chat-interno-tcp.sh
+chmod +x ./listener-chat-externo-tcp.sh
 
 curl -s -C - -o IP http://meuip.net.br
 IPexterno=$(grep "<title>" IP | cut -d ' ' -f9 | cut -d '<' -f1)
@@ -19,43 +19,43 @@ echo
 read -p "Qual sua escolha? " ESCOLHA
 case $ESCOLHA in
 0)
-./chat.sh
+./chat-tcp.sh
 ;;
 1)
-./listener-chat-interno.sh
+./listener-chat-interno-tcp.sh
 ;;
 2)
-./listener-chat-externo.sh
+./listener-chat-externo-tcp.sh
 ;;
 *)
-echo 'curl -s -C - -o IP http://meuip.net.br' > .listener-chat-again.sh
-echo 'IPexterno=$(grep "<title>" IP | cut -d " " -f9 | cut -d "<" -f1)' >> .listener-chat-again.sh
-echo 'IPinterno=$(hostname -I | cut -d " " -f1)' >> .listener-chat-again.sh
-echo 'rm IP' >> .listener-chat-again.sh
-echo 'echo' >> .listener-chat-again.sh
-echo 'echo "Seu IP Interno é: $IPinterno"' >> .listener-chat-again.sh
-echo 'echo "Seu IP Externo é: $IPexterno"' >> .listener-chat-again.sh
-echo 'echo' >> .listener-chat-again.sh
-echo 'echo "(1) Utilizar IP Interno"' >> .listener-chat-again.sh
-echo 'echo "(2) Utilizar IP Externo"' >> .listener-chat-again.sh
-echo 'echo "(0) Voltar"' >> .listener-chat-again.sh
-echo 'echo' >> .listener-chat-again.sh
-echo 'read -p "Qual sua escolha? " ESCOLHA' >> .listener-chat-again.sh
-echo 'case $ESCOLHA in' >> .listener-chat-again.sh
-echo '0)' >> .listener-chat-again.sh
-echo './chat.sh' >> .listener-chat-again.sh
-echo ';;' >> .listener-chat-again.sh
-echo '1)' >> .listener-chat-again.sh
-echo './listener-chat-interno.sh' >> .listener-chat-again.sh
-echo ';;' >> .listener-chat-again.sh
-echo '2)' >> .listener-chat-again.sh
-echo './listener-chat-externo.sh' >> .listener-chat-again.sh
-echo ';;' >> .listener-chat-again.sh
-echo '*)' >> .listener-chat-again.sh
-echo "./.listener-chat-again.sh" >> .listener-chat-again.sh
-echo ";;" >> .listener-chat-again.sh
-echo 'esac' >> .listener-chat-again.sh
-chmod +x .listener-chat-again.sh
-./.listener-chat-again.sh
+echo 'curl -s -C - -o IP http://meuip.net.br' > .listener-chat-tcp-again.sh
+echo 'IPexterno=$(grep "<title>" IP | cut -d " " -f9 | cut -d "<" -f1)' >> .listener-chat-tcp-again.sh
+echo 'IPinterno=$(hostname -I | cut -d " " -f1)' >> .listener-chat-tcp-again.sh
+echo 'rm IP' >> .listener-chat-tcp-again.sh
+echo 'echo' >> .listener-chat-tcp-again.sh
+echo 'echo "Seu IP Interno é: $IPinterno"' >> .listener-chat-tcp-again.sh
+echo 'echo "Seu IP Externo é: $IPexterno"' >> .listener-chat-tcp-again.sh
+echo 'echo' >> .listener-chat-tcp-again.sh
+echo 'echo "(1) Utilizar IP Interno"' >> .listener-chat-tcp-again.sh
+echo 'echo "(2) Utilizar IP Externo"' >> .listener-chat-tcp-again.sh
+echo 'echo "(0) Voltar"' >> .listener-chat-tcp-again.sh
+echo 'echo' >> .listener-chat-tcp-again.sh
+echo 'read -p "Qual sua escolha? " ESCOLHA' >> .listener-chat-tcp-again.sh
+echo 'case $ESCOLHA in' >> .listener-chat-tcp-again.sh
+echo '0)' >> .listener-chat-tcp-again.sh
+echo './chat.sh' >> .listener-chat-tcp-again.sh
+echo ';;' >> .listener-chat-tcp-again.sh
+echo '1)' >> .listener-chat-tcp-again.sh
+echo './listener-chat-interno-tcp.sh' >> .listener-chat-tcp-again.sh
+echo ';;' >> .listener-chat-tcp-again.sh
+echo '2)' >> .listener-chat-tcp-again.sh
+echo './listener-chat-externo-tcp.sh' >> .listener-chat-tcp-again.sh
+echo ';;' >> .listener-chat-tcp-again.sh
+echo '*)' >> .listener-chat-tcp-again.sh
+echo "./.listener-chat-tcp-again.sh" >> .listener-chat-tcp-again.sh
+echo ";;" >> .listener-chat-tcp-again.sh
+echo 'esac' >> .listener-chat-tcp-again.sh
+chmod +x .listener-chat-tcp-again.sh
+./.listener-chat-tcp-again.sh
 ;;
 esac
