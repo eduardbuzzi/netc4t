@@ -1,4 +1,9 @@
 #!/bin/bash
+chmod +x install.sh
+chmod +x ./chat.sh
+chmod +x ./filetransfer.sh
+chmod +x ./shellreverso.sh
+chmod +x ./portscan.sh
 trap '' 2
 echo
 echo "(1) Instalar NetCAT"
