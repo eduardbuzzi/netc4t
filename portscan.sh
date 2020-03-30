@@ -3,8 +3,8 @@ chmod +x ./portscan-ip.sh
 chmod +x ./portscan-dominio.sh
 trap '' 2
 echo
-echo "(1) Scan de Portas de um IP (ex: 192.168.1.1)"
-echo "(2) Scan de Portas de um Dominio (ex: www.globo.com)"
+echo "(1) Scan de Portas de IP (ex: 192.168.1.1)"
+echo "(2) Scan de Portas de Dominio (ex: www.globo.com)"
 echo "(0) Voltar"
 echo
 read -p "Qual sua escolha? " ESCOLHA
@@ -15,8 +15,8 @@ case $ESCOLHA in
 *)
 echo "trap '' 2" > .portscan-again.sh
 echo "echo" >> .portscan-again.sh
-echo 'echo "(1) Scan de Portas de um IP (ex: 192.168.1.1)"' >> .portscan-again.sh
-echo 'echo "(2) Scan de Portas de um Dominio (ex: www.globo.com)"' >> .portscan-again.sh
+echo 'echo "(1) Scan de Portas de IP (ex: 192.168.1.1)"' >> .portscan-again.sh
+echo 'echo "(2) Scan de Portas de Dominio (ex: www.globo.com)"' >> .portscan-again.sh
 echo 'echo "(0) Voltar"' >> .portscan-again.sh
 echo 'echo' >> .portscan-again.sh
 echo 'read -p "Qual sua escolha? " ESCOLHA' >> .portscan-again.sh
