@@ -14,6 +14,7 @@ echo
 echo "Informe o delimitador de portas quer fazer o scan (ex: 21 443)"
 echo "Se quiser fazer scan de apenas uma porta só coloca ela sozinha (ex: 80)"
 read -p "Informe a(s) porta(s) para fazer scan: " PORTAinicial PORTAfinal
+echo
 if [ -z $PORTAinicial ] && [ -z $PORTAfinal ]
 then
 echo
@@ -22,6 +23,6 @@ echo "Tudo bem, vou fingir que informou a porta 80 ;)"
 echo
 $PORTAinicial='80'
 fi
-nc -vzn -w1 $IP $PORTAinicial-$PORTAfinal
+nc -vz -w1 $IP $PORTAinicial-$PORTAfinal
 ./execute.sh
 exit
