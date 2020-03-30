@@ -11,6 +11,9 @@ echo
 echo "Digite o nome que o arquivo vai receber"
 echo "Exemplo: 'arquivo.txt'"
 read -p "Digite o nome do arquivo: " ARQUIVO
+if [ -z $ARQUIVO ] then
+ARQUIVO=arquivo
+fi
 echo "O arquivo vai ser armazenado em '$PWD/$ARQUIVO'"
 read -p "Informe a porta para escutar (entre 1-65535): " PORTA
 trap 2
