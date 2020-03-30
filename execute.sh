@@ -3,7 +3,7 @@ trap '' 2
 echo
 echo "(1) Instalar NetCAT"
 echo "(2) Chat"
-echo "(3) Enviar/Receber Arquivos"
+echo "(3) Enviar/Receber Arquivo"
 echo "(4) Shell Reverso"
 echo "(5) Scan de Portas"
 echo "(0) Sair"
@@ -33,7 +33,7 @@ echo "trap '' 2" > .executeagain.sh
 echo "echo" >> .executeagain.sh
 echo 'echo "(1) Instalar NetCAT"' >> .executeagain.sh
 echo 'echo "(2) Chat"' >> .executeagain.sh
-echo 'echo "(3) Enviar/Receber Arquivos"' >> .executeagain.sh
+echo 'echo "(3) Enviar/Receber Arquivo"' >> .executeagain.sh
 echo 'echo "(4) Shell Reverso"' >> .executeagain.sh
 echo 'echo "(5) Scan de Portas"' >> .executeagain.sh
 echo 'echo "(0) Sair"' >> .executeagain.sh
