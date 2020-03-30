@@ -12,7 +12,7 @@ exit
 fi
 echo
 echo "Informe o delimitador de portas quer fazer o scan (ex: 21 443)"
-echo "Se quiser fazer scan de apenas uma porta só coloca ela sozinha (ex: 80)"
+echo "Se quiser fazer scan de apenas uma porta só coloca ela duas vezes (ex: 80 80)"
 read -p "Informe a(s) porta(s) para fazer scan: " PORTAinicial PORTAfinal
 echo
 if [ -z $PORTAinicial ] && [ -z $PORTAfinal ]
