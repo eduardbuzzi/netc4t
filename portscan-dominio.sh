@@ -1,7 +1,7 @@
 #!/bin/bash
 echo
 read -p "Informe o dominio: " DOMINIO
-IP=$(host $DOMINIO | cut -d ' ' -f4)
+IP=$(host $DOMINIO | cut -d ' ' -f4 | head -n1)
 if [ -z $IP ]
 then
 echo "O domínio $DOMINIO aparentemente está fora do ar!"
