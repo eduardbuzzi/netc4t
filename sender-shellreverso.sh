@@ -1,7 +1,7 @@
 #!/bin/bash
 trap '' 2
 echo
-read -p "Informe o IP para enviar a Shell: " IPlistening
+read -p "Informe o IP no qual deseja enviar a Shell: " IPlistening
 read -p "Informe a porta que está escutando: " PORTA
 echo "Tentando enviar a Shell para a porta $PORTA do $IPlistening"
 echo
