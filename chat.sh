@@ -13,7 +13,8 @@ case $ESCOLHA in
 1) ./listener-chat.sh ;;
 2) ./sender-chat.sh ;;
 *)
-echo "echo" > .chat-again.sh
+echo "trap '' 2" > .chat-again.sh
+echo "echo" >> .chat-again.sh
 echo 'echo "(1) Escutar Chat"' >> .chat-again.sh
 echo 'echo "(2) Enviar Chat"' >> .chat-again.sh
 echo 'echo "(0) Voltar"' >> .chat-again.sh
