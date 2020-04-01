@@ -9,7 +9,7 @@ echo "Exemplo: '/root/arquivo.txt'"
 echo
 read -p "Informe o destino do arquivo: " DESTINO
 echo
-echo "Enviando $DESTINO na porta $PORTA do $IPreceber .."
+echo "Enviando \033[01;33m$DESTINO\033[01;00m na porta \033[01;31m$PORTA\033[01;00m do \033[01;31m$IPreceber\033[01;00m"
 echo
 trap 2
 nc $IPreceber $PORTA -w2 < $DESTINO
