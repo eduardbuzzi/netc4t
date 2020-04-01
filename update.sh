@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ..
+cd ../
 rm -rf netc4t 2> dev/null
 git clone -q https://github.com/eduardbuzzi/netc4t
 cd netc4t
