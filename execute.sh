@@ -4,6 +4,7 @@ chmod +x ./chat.sh
 chmod +x ./filetransfer.sh
 chmod +x ./shellreverso.sh
 chmod +x ./portscan.sh
+chmod +x ./update.sh
 trap '' 2
 echo
 echo -e "Script \033[01;34mnetc4t\033[01;00m criado por: \033[01;32mEduardo Buzzi\033[01;00m"
